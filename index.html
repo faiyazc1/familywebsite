@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family - Full Page Layout</title>
+    <style>
+        /* Retro font and colors */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+        body {
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /* Container for full-page layout */
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 20px;
+            border: 4px solid #16c79a;
+            border-radius: 10px;
+            background-color: #0f3460;
+            box-shadow: 0px 0px 20px 4px #16c79a;
+            margin: 20px 0;
+        }
+
+        /* Title and section heading styles */
+        h1, h2, h3 {
+            color: #ffd700;
+            text-shadow: 2px 2px #000;
+            margin: 20px 0;
+        }
+
+        /* Styling for links */
+        a {
+            color: #e94560;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #f4f4f2;
+        }
+
+        /* Family member box styling */
+        .family-member {
+            background-color: #1a1a2e;
+            border: 3px solid #16c79a;
+            border-radius: 10px;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 2px #16c79a;
+            color: #ffd700;
+        }
+
+        /* Name and icon styling within family member box */
+        .family-member h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .family-member h3::before {
+            content: '★';
+            color: #e94560;
+            margin-right: 10px;
+        }
+
+        /* Photo gallery styling */
+        .photo-gallery {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            gap: 10px;
+        }
+
+        .photo {
+            width: 200px;
+            height: 250px;
+            border: 4px solid #e94560;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px 4px #e94560;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1em;
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .caption {
+            margin-top: 5px;
+            color: #e0e0e0;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        /* Footer comment */
+        footer {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Page Title -->
+        <h1>My Family</h1>
+
+        <!-- Introduction Heading -->
+        <h2>About Us</h2>
+        <p>Welcome to a page dedicated to my family. Here's a little about each of them!</p>
+
+        <!-- Family Member Descriptions -->
+        <div class="family-member">
+            <h3>Baba (Dad)</h3>
+            <p><b>Baba</b> is always there for us and brings a lot of wisdom to our lives. He’s a true guide.</p>
+        </div>
+
+        <div class="family-member">
+            <h3>Ma (Mom)</h3>
+            <p><i>Ma</i> is the heart of our family. She's always caring and makes the best meals for us.</p>
+        </div>
+
+        <div class="family-member">
+            <h3>Norah (Sister)</h3>
+            <p><b>Norah</b> is my fun and energetic sister. She's always up for an adventure and brings joy to our lives.</p>
+        </div>
+
+        <div class="family-member">
+            <h3>Nana (Grandpa)</h3>
+            <p><b>Nana</b> is full of knowledge and experience. We love listening to his stories and learning from him.</p>
+        </div>
+
+        <div class="family-member">
+            <h3>Dadu (Grandma)</h3>
+            <p><b>Dadu</b> loves to sing and is passionate about quilting. She fills our home with warmth and melody!</p>
+        </div>
+
+        <div class="family-member">
+            <h3>Bailey (Yorkie)</h3>
+            <p><i>Bailey</i> is our little Yorkshire Terrier. He’s super affectionate with the family but can be a bit rough with strangers. We love him anyway!</p>
+        </div>
+
+        <div class="family-member">
+            <h3>Faiyaz (Me)</h3>
+            <p><b>Faiyaz</b> – That’s me! I love exploring cultures, working out, and spending quality time with my family and friends.</p>
+        </div>
+
+        <!-- Horizontal Line -->
+        <hr style="border: 1px solid #e94560; width: 80%; margin: 30px 0;">
+
+<!-- Centered Photo Gallery -->
+<div class="photo-gallery">
+    <div class="photo">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczP69vwLj3L68kVA6xp37qa7d2e0P4Yns2IbCtvQO0dJKWOYCA29eRzKq_10EDrW-aZh4eqTC46Upz3ZSJgBLImQuoGijWnZdewNxdOULr8-11m8NS5qQGN394BB324sFGZYSQGyU2ID1hMsvCUJ6KAG=w1156-h1540-s-no-gm?authuser=0" alt="Photo 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+    </div>
+    <div class="photo">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczP6ipuFA3kFbBuSxS-bi0jurQy5Rv4El_aoz8Kn2pLQ6zOgTStwi66qYMb5BAtAoxYnpDAbZJvI3qanzyT_A2B359lKELEi9f8Hc4ROwLxxlnrGmhK-30DxhAcqnC41mwU19qrKYF1aM5AbQw_FRn3n=w1056-h1540-s-no-gm?authuser=0" alt="Photo 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+    </div>
+    <div class="photo">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczOJV4jK9e7PIONfH5UT0Lm4TnkY8_GliyD1jACt1x4H1rkkdFIvN0l1s1OIfsSgn9vRqE2SDMmkSaN3theFeHw9ZOKCdx_TIE2yhZlWY4CiowUtuLZLGGNyMrlBqg8ylMWzSqJ4lR8fC8ZCUWHZ3vFm=w1029-h1164-s-no-gm?authuser=0" alt="Photo 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+    </div>
+</div>
+
+        <!-- Mailto Link -->
+        <p>Want to know more? <a href="mailto:faiyazwchowdhury@gmail.com">Email me here!</a></p>
+
+<!-- Embedded YouTube Video -->
+        <p>Here’s an edit of the capital of our home country: Dhaka, Bangladesh:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KWIb1pHyMLo?si=i04vw1nqdfJk8t3N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Visit my personal website(click proceed for the warning): <a href="https://faiyazc.com/" target="_blank">faiyazc.com</a></p>
+
+        <footer>
+            <!-- Tools: Windows, Notepad++, Chrome -->
+        </footer>
+    </div>
+</body>
+</html>
